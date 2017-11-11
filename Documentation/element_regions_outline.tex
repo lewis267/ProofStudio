@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+\pagestyle{empty}
+\begin{document}
+\section{Element Regions: Outline}
+This section covers the basic outline of what a element region will look like.\\
+
+An Element Region(ER) is a section in the GUI where a single element of a proof will reside. It should have the following features:
+\begin{itemize}
+\item An interface where the user can type in symbols to describe a individual item of a proof.
+\item A complete undo stack particular to this ER.
+\item The ability to copy and paste using the right click menu and the appropriate keyboard shortcuts in addition to expected functionality of a text entry field.
+\item The most recent image from a previous render event. If no previous render has occured, the place for the image should be marked as empty.
+\item Automatic rendering when the user focuses on an object outside of this ER.
+\item The interface should be replaced visually by the rendered image after the user leaves the ER.
+\item A single, separate process will handle the rendering of the ER's to improve performance and avoid GUI latency. Rendering jobs will be placed in a FIFO queue to handle large and/or frequent render requests.
+\item A single function will be called to render the user input. This could potentially be a BASH or terminal command. The input to this function will be a single string so that function arguments or file content can be passed to the function as appropriate.
+\item An user with access to the source code, with reasonable effort, should be able to modify the rendering function to use another tool. This is to improve portability to other OS's and maintain the ability to improve this software as better open source software is developed by the community.
+\end{itemize}
+\end{document}
