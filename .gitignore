@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Latex Compilation files
+*.log
+*.aux
+*.fdb_latexmk
+*.fls
