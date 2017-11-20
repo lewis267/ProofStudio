@@ -1,0 +1,3 @@
+[submodule "lib/wkhtmltopdf"]
+	path = lib/wkhtmltopdf
+	url = https://github.com/wkhtmltopdf/wkhtmltopdf.git
