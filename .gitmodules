@@ -1,3 +1,9 @@
 [submodule "lib/wkhtmltopdf"]
 	path = lib/wkhtmltopdf
 	url = https://github.com/wkhtmltopdf/wkhtmltopdf.git
+[submodule "lib/v8"]
+	path = lib/v8
+	url = https://github.com/v8/v8.git
+[submodule "lib/latexpp"]
+	path = lib/latexpp
+	url = https://github.com/goldsborough/latexpp.git
