@@ -7,3 +7,6 @@
 [submodule "lib/latexpp"]
 	path = lib/latexpp
 	url = https://github.com/goldsborough/latexpp.git
+[submodule "lib/KaTeX"]
+	path = lib/KaTeX
+	url = https://github.com/Khan/KaTeX.git
