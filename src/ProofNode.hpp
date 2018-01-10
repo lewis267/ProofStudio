@@ -1,3 +1,5 @@
+#include <vector>
+
 /*
  * A ProofNode is a general representation of a
  * single element or line in a proof.
@@ -11,4 +13,7 @@ class ProofNode {
 
 		ProofNode();
 		ProofNode(char *con);
+
+		int number;
+		vector<ProofNode&> references;
 };
